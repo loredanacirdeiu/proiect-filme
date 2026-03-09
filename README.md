@@ -1,71 +1,126 @@
-# 🎬 Platformă Online pentru Rating și Recenzii Filme
+# 🎬 Movie Manager
 
-## Descriere Proiect
-
-Aplicația reprezintă o platformă online unde utilizatorii pot căuta filme, le pot evalua (rating 1–5 stele), pot scrie recenzii și pot consulta clasamentele celor mai apreciate producții.
-
-Scopul aplicației este de a centraliza opiniile utilizatorilor și de a oferi statistici relevante despre popularitatea filmelor.
-
-Proiect realizat în **C# (.NET)** – Console App / Windows Forms / WPF / ASP.NET.
+Aplicație desktop dezvoltată în **C# (.NET)** pentru gestionarea unei colecții de filme.
+Aplicația permite utilizatorului să adauge, editeze, șteargă și să caute filme într-o colecție locală printr-o interfață grafică simplă și intuitivă.
 
 ---
 
-# 🎯 Obiective
+## 📌 Descriere
 
-- Gestionarea filmelor
-- Gestionarea utilizatorilor
-- Sistem de rating și recenzii
-- Generare clasamente și statistici
-- Implementarea regulilor de validare
+**Movie Manager** este o aplicație desktop care facilitează organizarea și administrarea informațiilor despre filme. Utilizatorul poate vizualiza lista filmelor, modifica datele acestora și efectua căutări rapide după diferite criterii.
 
----
+Proiectul a fost realizat pentru a demonstra concepte precum:
 
-# 👤 1. Gestionare Utilizatori
-
-Pentru fiecare utilizator:
-
-- ID utilizator
-- Nume
-- Email
-- Parolă
-- Data înregistrării
-
-## Operații:
-
-- Înregistrare
-- Autentificare
-- Editare profil
-- Ștergere cont
+* Programare orientată pe obiecte în **C#**
+* Dezvoltarea aplicațiilor **desktop**
+* Crearea unei **interfețe grafice**
+* Gestionarea datelor într-o aplicație software
 
 ---
 
-# 🎥 2. Gestionare Filme
+## 🚀 Funcționalități
 
-Pentru fiecare film:
-
-- Titlu
-- Gen
-- An lansare
-- Durată
-- Regizor
-- Descriere
-- Rating mediu (calculat automat)
-- Număr total voturi
-
-## Operații:
-
-- Adăugare film
-- Editare film
-- Ștergere film
-- Căutare după titlu / gen / an
-- Filtrare după rating
+✔️ Adăugarea unui film nou în colecție
+✔️ Editarea informațiilor unui film existent
+✔️ Ștergerea unui film din colecție
+✔️ Căutarea filmelor după titlu, gen sau an
+✔️ Afișarea filmelor într-un tabel
+✔️ Validarea datelor introduse
 
 ---
 
-# ⭐ 3. Sistem de Rating
+## 🎥 Structura datelor
 
-Fiecare utilizator poate:
+Fiecare film conține următoarele informații:
 
-- Acorda un rating între 1 și 5 stele
-- Modifica rating-ul acordat anterior
-- Scrie o recenzie (text)
+| Câmp       | Descriere                      |
+| ---------- | ------------------------------ |
+| ID         | Identificator unic al filmului |
+| Titlu      | Numele filmului                |
+| Gen        | Categoria filmului             |
+| An lansare | Anul în care a fost lansat     |
+| Durată     | Durata filmului în minute      |
+| Regizor    | Numele regizorului             |
+| Descriere  | Scurtă descriere a filmului    |
+
+---
+
+## 🖥️ Interfața aplicației
+
+Aplicația include o fereastră principală care conține:
+
+* tabel cu lista filmelor
+* câmp de căutare
+* opțiuni de filtrare
+* butoane pentru gestionarea filmelor
+
+### Acțiuni disponibile
+
+* **Adaugă film**
+* **Editează film**
+* **Șterge film**
+* **Caută film**
+
+---
+
+## 🗂️ Structura proiectului
+
+Exemplu de clasă utilizată pentru modelul filmului:
+
+```csharp
+public class Film
+{
+    public int Id { get; set; }
+    public string Titlu { get; set; }
+    public string Gen { get; set; }
+    public int AnLansare { get; set; }
+    public int Durata { get; set; }
+    public string Regizor { get; set; }
+    public string Descriere { get; set; }
+}
+```
+
+---
+
+## 🛠️ Tehnologii utilizate
+
+* **C#**
+* **.NET**
+* **Windows Forms / WPF**
+* **Visual Studio**
+* **OOP (Object-Oriented Programming)**
+
+---
+
+## ⚙️ Instalare și rulare
+
+1. Clonează repository-ul:
+
+```bash
+git clone https://github.com/username/movie-manager.git
+```
+
+2. Deschide proiectul în **Visual Studio**
+
+3. Rulează aplicația folosind:
+
+```
+Start / Run (F5)
+```
+
+---
+
+## 📚 Scopul proiectului
+
+Acest proiect a fost realizat în scop educațional pentru a exersa:
+
+* dezvoltarea aplicațiilor desktop în **C#**
+* implementarea unui **CRUD (Create, Read, Update, Delete)**
+* organizarea unui proiect software
+* utilizarea unei interfețe grafice pentru gestionarea datelor
+
+---
+
+## 📄 Licență
+
+Acest proiect este realizat în scop educațional și poate fi utilizat liber pentru învățare și dezvoltare personală.
